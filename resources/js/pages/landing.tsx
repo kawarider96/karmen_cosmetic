@@ -12,7 +12,7 @@ export default function Landing() {
     return (
         <>
             <Head title='Landing page'/>
-            <Stack sx={{p:5, backgroundImage:'url(/storage/images/banner_1.png)', backgroundSize:'cover', backgroundPosition:'center', height:'50dvh', display:'flex', flexDirection:'column', }}>
+            <Stack sx={{p:5, backgroundImage:'url(https://i.imgur.com/XycLwZv.jpeg)', backgroundSize:'cover', backgroundPosition:'center', height:'50dvh', display:'flex', flexDirection:'column', }}>
                 <Box sx={{display:'flex', flexDirection:'column', height:'100%'}}>
                     <Box sx={{flex:5, display:'flex', justifyContent:"center", alignItems:'center'}}>
                         <Box sx={{p:3, backgroundColor: theme.palette.glass.main,
@@ -43,7 +43,7 @@ export default function Landing() {
                 <Grid2 container spacing={2}>
                     <Grid2 size={{xs:4}}>
                         <Card sx={{ p: 2, display:'flex', height:"500px" }}>
-                            <CardMedia component="img" height='100%' image="/storage/images/services/anti_aging.png" />
+                            <CardMedia component="img" height='100%' image="https://i.imgur.com/Vu7B3Dy.jpeg" />
                             <Box sx={{display:'flex', flexDirection:'column'}}>
                                 <CardContent sx={{flex:4, overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
                                     <Typography variant="h5">Arckezelések</Typography>
@@ -103,7 +103,7 @@ export default function Landing() {
 
                     <Grid2 size={{xs:12}}>
                         <Card sx={{ p: 2, display:'flex', height:"500px" }}>
-                            <CardMedia component="img" height='100%' image="/storage/images/services/adrienne_feller.png" />
+                            <CardMedia component="img" height='100%' image="https://i.imgur.com/tORDPWF.jpeg" />
                             <Box sx={{display:'flex', flexDirection:'column'}}>
                                 <CardContent sx={{flex:4, overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
                                     <Typography variant="h5">Adrienne Feller</Typography>
