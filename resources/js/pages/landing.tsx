@@ -41,11 +41,11 @@ export default function Landing() {
             <Stack sx={{p:2}}>
         
                 <Grid2 container spacing={2}>
-                    <Grid2 size={{xs:4}}>
-                        <Card sx={{ p: 2, display:'flex', height:"500px" }}>
-                            <CardMedia component="img" height='100%' image="https://i.imgur.com/Vu7B3Dy.jpeg" />
+                    <Grid2 size={{xs:12, lg:4}}>
+                        <Card sx={{ p: 2, display:['block', 'flex'], height:"500px" }}>
+                            <CardMedia component="img" sx={{height:['50%', '100%']}} image="https://i.imgur.com/Vu7B3Dy.jpeg" />
                             <Box sx={{display:'flex', flexDirection:'column'}}>
-                                <CardContent sx={{flex:4, overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
+                                <CardContent sx={{height:['200px', '100%'], overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
                                     <Typography variant="h5">Arckezelések</Typography>
                                     <Typography variant="body2" sx={{textAlign:'justify'}}>
                                     Ez a kozmetikai kezelés a folyamatos újítások miatt ma már több, mint egy hagyományos bőrápolás. Az <strong>Alissa Beauté</strong> a termékeit a bio- és a nanotechnológia együttes alkalmazásával hozza létre, így a hatóanyagok a bőr mélyebb rétegeibe is bejuttathatók.
@@ -66,8 +66,8 @@ export default function Landing() {
                         </Card>
                     </Grid2>
 
-                    <Grid2 size={{xs:8}}>
-                        <Card sx={{ p: 2, display:'flex', height:"500px" }}>
+                    <Grid2 size={{xs:12, lg:8}}>
+                        <Card sx={{ p: 2, display:['grid','flex'], height:"500px" }}>
                             <CardMedia 
                             sx={{flex:3}}
                             component="iframe" 
@@ -79,7 +79,7 @@ export default function Landing() {
                             allowfullscreen
                             />
                             <Box sx={{display:'flex', flexDirection:'column', flex:2}}>
-                                <CardContent sx={{flex:4, overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
+                                <CardContent sx={{height:['200px', '100%'], overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
                                     <Typography variant="h5">BBS-29 Thermage mátrixpontos rádiofrekvencia</Typography>
                                     <Typography variant="body2" sx={{textAlign:'justify'}}>
                                     <strong>Kedves Vendégeim és kedves Érdeklődök!</strong><br/><br/>
@@ -101,11 +101,11 @@ export default function Landing() {
                         </Card>
                     </Grid2>
 
-                    <Grid2 size={{xs:12}}>
-                        <Card sx={{ p: 2, display:'flex', height:"500px" }}>
-                            <CardMedia component="img" height='100%' image="https://i.imgur.com/tORDPWF.jpeg" />
+                    <Grid2 size={{xs:12, lg:12}}>
+                        <Card sx={{ p: 2, display:['grid', 'flex'], height:"500px" }}>
+                            <CardMedia component="img" sx={{height:['100%', '100%'], maxWidth:['100%', '50%']}} image="https://i.imgur.com/tORDPWF.jpeg" />
                             <Box sx={{display:'flex', flexDirection:'column'}}>
-                                <CardContent sx={{flex:4, overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
+                                <CardContent sx={{height:['200px', '100%'], overflow:'auto', display:'flex', flexDirection:'column', gap:'50px'}}>
                                     <Typography variant="h5">Adrienne Feller</Typography>
                                     <Typography variant="body2" sx={{textAlign:'justify'}}>
                                     <strong>"Az, hogy mivel ápoljuk a bőrünket, éppoly fontos, mint az, hogy milyen fizikai és szellemi táplálékot veszünk magunkhoz"</strong><br/>állítja a termékcsalád megálmodója és megalkotója, Feller Adrienne.<br/><br/>
