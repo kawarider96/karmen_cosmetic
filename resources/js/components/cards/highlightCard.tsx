@@ -6,7 +6,7 @@ interface HighlightProps {
     children: ReactNode;
 }
 
-export function HiglightText({ children }: HighlightProps) {
+export function HighlightText({ children }: HighlightProps) {
     const theme = useTheme<Theme>();
 
     return (

@@ -1,10 +1,11 @@
-import { GlassCard } from '@/components/cards/glassCard'
 import { Head } from '@inertiajs/react'
 import { Box, Stack, Typography, Paper, Button, Card, CardMedia, CardContent, CardActions, Grid2 } from '@mui/material'
 import { useTheme, Theme } from '@mui/material/styles'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { HiglightText } from '@/components/cards/highlightCard';
+import { Hero } from '@/components/heros/hero';
+import { ShadowWindow } from '@/components/cards/shadowWindow';
+import { BannerText } from '@/components/banners/bannerText';
 
 export default function Landing() {
     const theme = useTheme<Theme>();
@@ -12,36 +13,20 @@ export default function Landing() {
     return (
         <>
             <Head title='Landing page'/>
-            <Stack sx={{p:5, backgroundImage:'url(https://i.imgur.com/XycLwZv.jpeg)', backgroundSize:'cover', backgroundPosition:'center', height:'50dvh', display:'flex', flexDirection:'column', }}>
-                <Box sx={{display:'flex', flexDirection:'column', height:'100%'}}>
-                    <Box sx={{flex:5, display:'flex', justifyContent:"center", alignItems:'center'}}>
-                        <Box sx={{p:3, backgroundColor: theme.palette.glass.main,
-                        backdropFilter: 'blur(8px)', boxShadow:theme.shadows[10], borderRadius:'10px', display:'flex', flexDirection:'column', gap:'20px'}}>
+                <Hero>
+                    <ShadowWindow>
                             <Typography variant='h4' sx={{color:'#fff', fontWeight:'bolder' }}>Szépség új dimenzióban.</Typography>
                             <Button fullWidth variant='contained'>Foglalj időpontot</Button>
-                        </Box>
-                    </Box>
-                    <Box sx={{flex:1, display:'flex', flexDirection:'column', gap:'10px'}}>
-                        <Typography variant='h5' sx={{color:'#fff', fontFamily: 'Outfit, sans-serif', fontWeight:'bolder'}}>Kustra Kármen kozmetikus</Typography>
-                        <Typography variant='body2' sx={{color:'#fff', fontFamily: 'Outfit, sans-serif', fontWeight:'bolder'}}>Colonia-Passage Üzletház, Citrom utca 2-6. , Pécs, Hungary</Typography>
-                        <Box sx={{display:'flex', gap:'10px'}}>
-                            <HiglightText>
-                                <PhoneIphoneIcon />
-                                <Typography variant='body2'>+36 30 520 1000</Typography>
-                            </HiglightText>
-                            <Button variant='contained'>
-                                <a style={{display:'flex', alignItems:'center'}} href='https://www.facebook.com/profile.php?id=61573648136257' target='_blank'><FacebookIcon sx={{color:'#fff', fontSize:'50px '}}/></a>
-                            </Button>
-                        </Box>
-                    </Box>
+                    </ShadowWindow>
                     
-                </Box>
-            </Stack>
+                    <BannerText/>
+
+                </Hero>
 
             <Stack sx={{p:2}}>
         
                 <Grid2 container spacing={2}>
-                    <Grid2 size={{xs:12, lg:4}}>
+                  <Grid2 size={{xs:12, lg:4}}>
                         <Card sx={{ p: 2, display:['block', 'flex'], height:"500px" }}>
                             <CardMedia component="img" sx={{height:['50%', '100%']}} image="https://i.imgur.com/Vu7B3Dy.jpeg" />
                             <Box sx={{display:'flex', flexDirection:'column'}}>
